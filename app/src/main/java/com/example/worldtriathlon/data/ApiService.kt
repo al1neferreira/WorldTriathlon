@@ -1,4 +1,4 @@
-package com.example.worldtriathlon
+package com.example.worldtriathlon.data
 
 import retrofit2.Call
 import retrofit2.http.GET
