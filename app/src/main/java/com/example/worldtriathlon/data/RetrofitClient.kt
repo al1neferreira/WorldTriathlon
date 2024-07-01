@@ -17,7 +17,7 @@ object RetrofitClient {
             clientBuilder.addInterceptor{ chain ->
                 val original: Request = chain.request()
                 val requestBuilder: Request.Builder = original.newBuilder()
-                    .header("accept", "application/json $apikey")
+                    .header("apikey", apikey)
                 val request: Request = requestBuilder.build()
                 chain.proceed(request)
             }
